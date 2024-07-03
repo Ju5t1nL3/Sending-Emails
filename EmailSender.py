@@ -28,14 +28,14 @@ def email_list(temp):
         nextStep2 = False
         nextStep3 = False
         while nextStep2 == False:
-            to_temp = input(f"Who would you like to {temp} this email to?").strip()
+            to_temp = input(f"Who would you like to {temp} this email to? ").strip()
             if to_temp.isspace() or to_temp == "":
                 print("An email is required.")
             else:
                 nextStep2 = True
                 email_whom += to_temp
         while nextStep3 == False:
-            answer = input (f"Would you like to {temp} this email to anyone else (Y/N)?").lower().strip()
+            answer = input (f"Would you like to {temp} this email to anyone else (Y/N)? ").lower().strip()
             if answer in accepted:
                 nextStep3 = True
                 if answer in accepted_yes:
@@ -59,7 +59,7 @@ def continue_on(temp):
     nextStep = False
 
     while nextStep == False:
-        answer = input(f"Would you like to {temp} this email to anyone (Y/N)?").lower().strip()
+        answer = input(f"Would you like to {temp} this email to anyone (Y/N)? ").lower().strip()
         if answer in accepted:
             nextStep = True
             if answer in accepted_yes:
@@ -77,14 +77,14 @@ email_bcc = continue_on("BCC")
 
 nextStep = False
 while nextStep == False:
-    subject = input("Please enter a subject.")
+    subject = input("Please enter a subject. ")
     if subject.isspace() or subject == "":
         print("A subject is required for the email.")
     else:
         nextStep = True
 
 #sets message of email
-body = input("Please enter a message.")
+body = input("Please enter a message. ")
 
 msg = EmailMessage()
 msg['From'] = email_sender
