@@ -8,6 +8,9 @@ from Secret import my_password
 import ssl
 import smtplib
 
+email_sender = "justinle2006@gmail.com" #change this to your gmail email if you would like to try
+email_password = my_password #this is the password from two factor authentification
+
 def email_list(temp):
     """
     Returns a string that contains emails separated by commas and no spaces (can store a singular email).
@@ -66,9 +69,6 @@ def continue_on(temp):
                 return ""
         else:
             print("Please give an appropriate answer.")
-
-email_sender = "justinle2006@gmail.com" #change this to your gmail email if you would like to try
-email_password = my_password #this is the password from two factor authentification
 
 #sets email headers
 email_to = email_list("send") 
