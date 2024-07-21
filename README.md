@@ -6,7 +6,7 @@ This program is capable of sending emails only if the user is using gmail. Despi
 
 The program will enter whom you would like to send the email to. Optionally, you are also capable of CCing and BCCing the email to others. You are able to have unlimited recipients. Afterwards, you will be prompted to give the email a subject (required). Lastly you will be prompted to write a message.
 
-##How to Use the Program
+## How to Use the Program
 
 If you would like to use the program, you must first ensure that you're using a gmail account. Then, follow the steps listed below:
 
